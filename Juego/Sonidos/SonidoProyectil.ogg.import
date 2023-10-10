@@ -11,5 +11,5 @@ dest_files=[ "res://.import/SonidoProyectil.ogg-5a6390e2aa3e598572ed99e606bd8e3b
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0
