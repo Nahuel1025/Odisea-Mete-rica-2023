@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SonidoProyectil.ogg-5a6390e2aa3e598572ed99e606bd8e3b.oggstr"
+
+[deps]
+
+source_file="res://Juego/Sonidos/SonidoProyectil.ogg"
+dest_files=[ "res://.import/SonidoProyectil.ogg-5a6390e2aa3e598572ed99e606bd8e3b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
