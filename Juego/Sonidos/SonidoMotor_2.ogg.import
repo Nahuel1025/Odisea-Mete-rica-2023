@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SonidoMotor_2.ogg-1d273a102e6b8a835e8a7039361d17e1.oggstr"
+
+[deps]
+
+source_file="res://Juego/Sonidos/SonidoMotor_2.ogg"
+dest_files=[ "res://.import/SonidoMotor_2.ogg-1d273a102e6b8a835e8a7039361d17e1.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
