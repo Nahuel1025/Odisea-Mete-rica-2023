@@ -69,16 +69,17 @@ func _ready() -> void:
 func controlador_estados(nuevo_estado: int) -> void:
 	match nuevo_estado:
 		ESTADO.SPAWN:
-			colisionador.set_deferred("diseabled", true)
+			colisionador.set_deferred("disabled", true)
 			canion.set_puede_disparar(false)
 		ESTADO.VIVO:
-			colisionador.set_deferred("diseabled", false)
+			colisionador.set_deferred("disabled", false)
 			canion.set_puede_disparar(true)
 		ESTADO.INVENCIBLE:
-			colisionador.set_deferred("diseabled",  true)
+			colisionador.set_deferred("disabled",  true)
 		ESTADO.MUERTO:
-			colisionador.set_deferred("diseabled",  true)
+			colisionador.set_deferred("disabled",  true)
 			canion.set_puede_disparar(true)
+			Eventos.emit_signal("nave_destruida", global_position, 3)
 			queue_free()
 		_:
 			printerr("Error de estado")
@@ -119,3 +120,6 @@ func player_input() -> void:
 func _on_AnimationPlayer_animation_finished(anim_name: String) -> void:
 	if anim_name == "Spawn":
 		controlador_estados(ESTADO.VIVO)
+
+func destruir() -> void:
+	controlador_estados(ESTADO.MUERTO)
