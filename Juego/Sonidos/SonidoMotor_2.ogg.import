@@ -11,5 +11,5 @@ dest_files=[ "res://.import/SonidoMotor_2.ogg-1d273a102e6b8a835e8a7039361d17e1.o
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

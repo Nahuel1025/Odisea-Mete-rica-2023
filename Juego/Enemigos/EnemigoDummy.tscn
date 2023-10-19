@@ -26,6 +26,7 @@ texture = ExtResource( 2 )
 
 [node name="Canion" parent="." instance=ExtResource( 4 )]
 proyectil = ExtResource( 5 )
+cadencia_disparo = 0.8
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 
 [editable path="Canion"]
