@@ -11,5 +11,5 @@ dest_files=[ "res://.import/Motor.ogg-163fde08fb39e55ce57bb634733959ee.oggstr" ]
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0
