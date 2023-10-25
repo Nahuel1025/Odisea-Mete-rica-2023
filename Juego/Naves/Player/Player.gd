@@ -136,3 +136,9 @@ func destruir() -> void:
 	controlador_estados(ESTADO.MUERTO)
 
 
+
+
+func _on_body_entered(body: Node) -> void:
+	if body is Meteorito:
+		body.destruir()
+		destruir()
