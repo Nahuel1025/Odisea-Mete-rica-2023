@@ -8,12 +8,15 @@ export var cast_speed := 7000.0
 export var max_length := 1400.0
 # Base duration of the tween animation in seconds.
 export var growth_time := 0.1
+export var radio_danio:float = 4.0
+export var energia:float = 4.0
+export var radio_desgaste:float = -1.0
 
 # If `true`, the laser is firing.
 # It plays appearing and disappearing animations when it's not animating.
 # See `appear()` and `disappear()` for more information.
 var is_casting := false setget set_is_casting
-var radio_danio: float = 4.0 
+
 
 onready var fill := $FillLine2D
 onready var tween := $Tween
@@ -58,6 +61,13 @@ func set_is_casting(cast: bool) -> void:
 # Controls the emission of particles and extends the Line2D to `cast_to` or the ray's 
 # collision point, whichever is closest.
 func cast_beam(delta: float) -> void:
+	if energia <= 0.0:
+		print("sin energia")
+		set_is_casting(false)
+		return
+	
+	energia += radio_desgaste * delta
+	
 	var cast_point := cast_to
 	
 	force_raycast_update()
