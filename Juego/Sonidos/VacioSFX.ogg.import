@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/VacioSFX.ogg-fc0ccabaaa6a1c088346a82fca074842.oggstr"
+
+[deps]
+
+source_file="res://Juego/Sonidos/VacioSFX.ogg"
+dest_files=[ "res://.import/VacioSFX.ogg-fc0ccabaaa6a1c088346a82fca074842.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

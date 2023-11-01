@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/CargaSFX.ogg-d3f2501918db3da17dfd549331d99eea.oggstr"
+
+[deps]
+
+source_file="res://Juego/Sonidos/CargaSFX.ogg"
+dest_files=[ "res://.import/CargaSFX.ogg-d3f2501918db3da17dfd549331d99eea.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
